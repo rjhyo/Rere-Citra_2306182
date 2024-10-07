@@ -6,12 +6,32 @@ class Jadwal {
     }
 }
 
+class JadwalEklusif extends Jadwal {
+    constructor(tujuan, waktuKeberangkatan, harga) {
+        super(tujuan, waktuKeberangkatan, harga * 1.5);
+    }
+
+    display(){
+        console.log(`Tujuan: ${this.tujuan}, Waktu ${this.waktuKeberangkatan}, Harga: Rp ${this.harga}`);
+    }
+
+}
+
+class JadwalEkonomi extends Jadwal {
+    constructor(tujuan, waktuKeberangkatan, harga) {
+        super(tujuan, waktuKeberangkatan, harga * 0.8);
+    }
+
+    display() {
+        console.log(`(Ekonomi) Tujuan: ${this.tujuan}, Waktu: ${this.waktuKeberangkatan}, Harga: Rp ${this.harga}`);
+    }
+}
 
 const daftarJadwal = [
-    new Jadwal("Jakarta - Surabaya", "08:00", 200000),
-    new Jadwal("Jakarta - Bandung", "09:30", 100000),
-    new Jadwal("Jakarta - Yogyakarta", "12:00", 250000),
-    new Jadwal("Jakarta - Bali", "15:00", 500000)
+    new JadwalEklusif("Jakarta - Surabaya", "08:00", 200000),
+    new JadwalEklusif("Jakarta - Bandung", "09:30", 100000),
+    new JadwalEklusif("Jakarta - Yogyakarta", "12:00", 250000),
+    new JadwalEklusif("Jakarta - Bali", "15:00", 500000)
 ];
 
 
@@ -19,7 +39,8 @@ const daftarJadwal = [
 function tampilkanJadwal() {
     console.log("Jadwal Keberangkatan:");
     daftarJadwal.forEach((jadwal, index) => {
-        console.log(`${index + 1}. Tujuan: ${jadwal.tujuan}, Waktu: ${jadwal.waktuKeberangkatan}, Harga: Rp ${jadwal.harga}`);
+        console.log(`${index + 1}.  `);
+        jadwal.display();
     });
 }
 
