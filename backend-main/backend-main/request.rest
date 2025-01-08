@@ -1,0 +1,51 @@
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "rere",
+    "email": "rere@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+//get All Users
+GET http://localhost:5000/users
+
+###
+//get Single Users
+GET http://localhost:5000/users/731b19c0-cfc6-4af3-9052-35d9a208c8c5
+
+###
+//Update a user
+PATCH  http://localhost:5000/users/d103698c-30eb-42fc-9d5f-c7fb8f9e8dcf
+Content-Type:  application/json
+
+{
+    "name": "Ramadhani Updated",
+    "email": "dhani@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+//delete a user
+DELETE http://localhost:5000/users/681d1006-ff81-4737-8234-650f8be3b836
+
+###
+//login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "rere@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/me
+
+###
+DELETE http://localhost:5000/logout
