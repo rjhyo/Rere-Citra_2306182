@@ -1,0 +1,151 @@
+/* style.css */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f7f7f7; /* Light grey background */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-image: url('foto/Coquette\ Bow\ Digital\ Art\ Print.jpeg');
+    color: rgb(0, 0, 0);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+section hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+/* table-style.css */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #2abda5;
+    color: white;
+    text-align: center;
+}
+
+td a {
+    color: #2abda5;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+/* form-style.css */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea,
+form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #2abda5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2abda5;
+}
+/* biography-style.css */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    border-radius: 20% / 40%; /* Oval shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    
+/* Mengatur font menjadi tebal (bold) */
+bold-text {
+    font-weight: bold; /* atau gunakan nilai 400 */
+}
+
+}
+
+.biography-section p {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.6;
+}
+/* Apply background photo to the entire page */
+body {
+    background-image: url('foto/Coquette\ Bow\ Digital\ Art\ Print.jpeg');
+    background-size: cover; /* Ensure the photo covers the entire viewport */
+    background-position: center; /* Center the background photo */
+    background-repeat: no-repeat; /* Prevent repeating of the background photo */
+    background-attachment: fixed; /* Keep the background photo fixed during scrolling */
+    color: #333;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
